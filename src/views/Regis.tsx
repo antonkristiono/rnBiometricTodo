@@ -13,30 +13,33 @@ export default function Regis({ navigation }) {
 
             if (success) {
                 console.log('successful biometrics provided')
+                console.log(resultObject)
+                navigation.navigate('Todo')
             } else {
                 console.log('user cancelled biometric prompt')
+                navigation.navigate('Home')
             }
         })
         .catch(() => {
             console.log('biometrics failed')
+            navigation.navigate('Home')
         })
 
     return (
         <View>
-            <Button
+            {/* <Button
                 title="Back to Authenticate View"
                 color="#841584"
                 accessibilityLabel="Learn more about this purple button"
                 onPress={() => navigation.navigate('Home')}
             />
-            <Text>aa</Text>
 
             <Button
                 title="Todo Page"
                 color="#841584"
                 accessibilityLabel="Learn more about this purple button"
                 onPress={() => navigation.navigate('Todo')}
-            />
+            /> */}
         </View>
     )
 }
