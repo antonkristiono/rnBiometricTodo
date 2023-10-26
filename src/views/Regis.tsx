@@ -35,7 +35,7 @@ export default function Regis({ navigation }) {
                 title="Todo Page"
                 color="#841584"
                 accessibilityLabel="Learn more about this purple button"
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('Todo')}
             />
         </View>
     )
